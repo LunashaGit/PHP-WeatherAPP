@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+h1, h2, p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.App__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin: auto;
+  max-width: 15rem;
+}
+.App__link a {
+  color: black;
+  text-decoration: none;
+  margin: 1rem 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.App__link a:hover {
+  text-decoration: underline;
+}
+
+.Home__input, .Compare__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Home__input input[type=submit], .Compare__input input[type=submit] {
+  background: #bbecff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Home__input input[type=submit]:hover, .Compare__input input[type=submit]:hover {
+  background: #a8d6e9;
+  color: white;
+}
+.Home__input input[type=text], .Compare__input input[type=text] {
+  border-radius: 2px;
+  border: 1px solid #8d8d8d;
+  padding: 0.5rem;
+}
+.Home__input input[type=text]:focus, .Compare__input input[type=text]:focus {
+  outline: none;
+}
+
+.Compare__input {
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.ImageUnsplash {
+  margin: 0 auto;
+  max-width: 20rem;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  min-width: 15rem;
+}
+
+.Today {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  box-shadow: 4px 4px 1px Grey;
+  background: white;
+  border-radius: 5px;
+  color: black;
+  transition: 0.5s;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.4);
+}
+.Today img {
+  background: #c3e7f5;
+  border-radius: 50%;
+}
+.Today:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+.MultipleDays {
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  box-shadow: 4px 4px 1px Grey;
+  background: white;
+  border-radius: 5px;
+  color: black;
+  transition: 0.5s;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.4);
+}
+.MultipleDays img {
+  background: #c3e7f5;
+  border-radius: 50%;
+}
+.MultipleDays:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 1024px) {
+  .Regroup__Today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Regroup__Five {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .ImageUnsplash {
+    margin: 0 auto;
+    max-width: 50rem;
+  }
+
+  canvas {
+    display: block;
+    margin: 0 auto;
+    min-width: 50rem;
+  }
+
+  .Today {
+    padding: 2rem;
+    margin: 2rem 5rem;
+  }
+
+  .MultipleDays {
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 10rem;
+  }
+
+  .MultipleBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
